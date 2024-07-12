@@ -28,7 +28,10 @@ struct DescriptionItem: View {
             if isCommingSoon {
                 Text("скоро")
                 .font(Font.custom("SF Pro", size: 12))
-                .foregroundColor(Color(red: 0.24, green: 0.24, blue: 0.26).opacity(0.3))
+                .foregroundColor(
+                    Color(red: 0.24, green: 0.24, blue: 0.26)
+                    .opacity(0.3)
+                )
                 .frame(width: 41, height: 26, alignment: .topLeading)
                 Spacer()
             }

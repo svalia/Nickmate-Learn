@@ -61,18 +61,19 @@ struct ContentView: View {
                         .frame(height: 45)
                     HStack {
                         Spacer()
-                        HStack {
-                            Text("Начать")
-                                .foregroundStyle(.white)
-                        }
-                        .padding(.horizontal, 20)
-                        .padding(.all, 14)
-                        .frame(maxWidth: .infinity, alignment: .center)
-                        .background(Color(red: 0, green: 0.48, blue: 1))
-                        .cornerRadius(12)
-                        .onTapGesture {
-                            isAuthenticationView.toggle()
-                        }
+//                        HStack {
+//                            Text("Начать")
+//                                .foregroundStyle(.white)
+//                        }
+//                        .padding(.horizontal, 20)
+//                        .padding(.all, 14)
+//                        .frame(maxWidth: .infinity, alignment: .center)
+//                        .background(Color(red: 0, green: 0.48, blue: 1))
+//                        .cornerRadius(12)
+//                        .onTapGesture {
+//                            isAuthenticationView.toggle()
+//                        }
+                        BigButton(text: "Начать", color: .blue, action: {isAuthenticationView.toggle()})
                         Spacer()
                     }
                     Spacer()

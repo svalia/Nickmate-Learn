@@ -14,7 +14,7 @@ struct AuthenticationView: View {
             ZStack {
                 VStack {
                     HStack {
-                        Text("Регистрация")
+                        Text("Регистрация/Вход")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .padding(.leading, 24.0)
@@ -31,28 +31,36 @@ struct AuthenticationView: View {
                             .multilineTextAlignment(.center)
                             .foregroundColor(Color(red: 0.44, green: 0.5, blue: 0.59))
                             .frame(width: 279, alignment: .center)
-                        HStack {
-                            Spacer()
-                            HStack {
-                                Text("Google")
-                                    .foregroundStyle(.white)
-                            }
-                            .padding(.horizontal, 20)
-                            .padding(.all, 14)
-                            .frame(maxWidth: .infinity, alignment: .center)
-                            .background(Color(red: 0, green: 0.48, blue: 1))
-                            .cornerRadius(12)
-                            //                        .onTapGesture {
-                            //                            isAuthenticationView.toggle()
-                            Spacer()
-                        }
+//                        HStack {
+//                            Spacer()
+//                            HStack {
+//                                Text("Google")
+//                                    .foregroundStyle(.white)
+//                            }
+//                            .padding(.horizontal, 20)
+//                            .padding(.all, 14)
+//                            .frame(maxWidth: .infinity, alignment: .center)
+//                            .background(Color(red: 0, green: 0.48, blue: 1))
+//                            .cornerRadius(12)
+//                            //                        .onTapGesture {
+//                            //                            isAuthenticationView.toggle()
+//                            Spacer()
+//                        }
+                        BigButton(text: "Google", color: .blue, action: {closeIcon()})
                         // Caption1/Regular
-                        Text("Нажимая кнопку, соглашаюсь с Правилами использования и Политикой конфиденциальности")
-                            .font(Font.custom("SF Pro", size: 12))
-                            .multilineTextAlignment(.center)
-                            .foregroundColor(Color(red: 0.63, green: 0.68, blue: 0.75))
+                        HStack {
+                            Text("Нажимая кнопку, соглашаюсь с ")
+                            + Text("Правилами использования ")
+                                .foregroundColor(Color(red: 0, green: 0.48, blue: 1))
+                            + Text("и ")
+                            + Text("Политикой конфиденциальности")
+                                .foregroundColor(Color(red: 0, green: 0.48, blue: 1))
+                        }
+                        .font(Font.custom("SF Pro", size: 12))
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(Color(red: 0.63, green: 0.68, blue: 0.75))
                         
-                            .frame(width: 337, alignment: .center)
+                        .frame(width: 337, alignment: .center)
                     }
                     .padding(0)
                     .frame(maxWidth: .infinity, minHeight: 197, maxHeight: 197, alignment: .center)
