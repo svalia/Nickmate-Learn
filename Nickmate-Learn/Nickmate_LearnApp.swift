@@ -11,7 +11,7 @@ import SwiftUI
 struct Nickmate_LearnApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

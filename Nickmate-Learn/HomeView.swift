@@ -10,7 +10,16 @@ import SwiftUI
 struct HomeView: View {
     var body: some View {
         ZStack {
-            Text("hi,bro!")
+            
+            ScrollView (showsIndicators: false) {
+                LazyVStack
+                {
+                    ForEach (0..<100) {item in
+                        TasktemView()
+                    }
+                }
+//                .padding(.leading, 16)
+            }//ScrollView End
         }
     }
 }

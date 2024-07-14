@@ -14,7 +14,7 @@ struct AuthenticationView: View {
             ZStack {
                 VStack {
                     HStack {
-                        Text("Регистрация/Вход")
+                        Text("Авторизация")
                             .font(.largeTitle)
                             .fontWeight(.bold)
                             .padding(.leading, 24.0)

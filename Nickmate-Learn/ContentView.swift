@@ -14,10 +14,10 @@ struct ContentView: View {
             ZStack {
                 VStack {
                     Spacer()
-                        .frame(height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/)
+                        .frame(height: 100)
                     HStack {
                         Text("Привет 👋")
-                            .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                            .font(.largeTitle)
                             .fontWeight(.bold)
                             .multilineTextAlignment(.leading)
                             .padding(.leading, 16.0)
@@ -42,7 +42,7 @@ struct ContentView: View {
                     VStack(alignment: .leading, spacing: 24) {
                         HStack {
                             Text("Помогаю")
-                                .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                                .font(.largeTitle)
                                 .fontWeight(.bold)
                                 .multilineTextAlignment(.leading)
                                 .padding(.leading, 16.0)
@@ -61,18 +61,18 @@ struct ContentView: View {
                         .frame(height: 45)
                     HStack {
                         Spacer()
-//                        HStack {
-//                            Text("Начать")
-//                                .foregroundStyle(.white)
-//                        }
-//                        .padding(.horizontal, 20)
-//                        .padding(.all, 14)
-//                        .frame(maxWidth: .infinity, alignment: .center)
-//                        .background(Color(red: 0, green: 0.48, blue: 1))
-//                        .cornerRadius(12)
-//                        .onTapGesture {
-//                            isAuthenticationView.toggle()
-//                        }
+                        //                        HStack {
+                        //                            Text("Начать")
+                        //                                .foregroundStyle(.white)
+                        //                        }
+                        //                        .padding(.horizontal, 20)
+                        //                        .padding(.all, 14)
+                        //                        .frame(maxWidth: .infinity, alignment: .center)
+                        //                        .background(Color(red: 0, green: 0.48, blue: 1))
+                        //                        .cornerRadius(12)
+                        //                        .onTapGesture {
+                        //                            isAuthenticationView.toggle()
+                        //                        }
                         BigButton(text: "Начать", color: .blue, action: {isAuthenticationView.toggle()})
                         Spacer()
                     }
