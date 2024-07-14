@@ -68,7 +68,7 @@ struct TasktemView: View {
                         .padding(.vertical, 14)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .cornerRadius(10)
-//                        .shadow(color: .black.opacity(0.45), radius: 10, x: 0, y: 4)
+                        .shadow(color: .black.opacity(0.45), radius: 10, x: 0, y: 4)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .inset(by: 0.5)
