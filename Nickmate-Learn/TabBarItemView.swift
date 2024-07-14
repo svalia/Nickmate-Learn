@@ -22,14 +22,14 @@ struct TabBarItemView: View {
             VStack{
                 HStack {
                     Image(systemName: icon)
-                    //                        .resizable()
+//                        .resizable()
                         .frame(width: 20, height: 17.5974)
                         .padding(.all, 1)
-                        .symbolRenderingMode(.palette)
+                        .symbolRenderingMode(.monochrome)
                         .foregroundColor(Color(red: 0.6, green: 0.6, blue: 0.6))
                         .shadow(color: .clear, radius: 0)
                 }
-                .frame(width: 24, height: 24, alignment: .center)
+                .frame(width: 28, height: 28, alignment: .center)
                 
                 Text(text)
                     .font(
@@ -62,5 +62,5 @@ struct TabBarItemView: View {
 
 #Preview {
     //    TabBarItemView(icon: "house", text: "Дела")
-    TabBarItemView(tabType: .icon, icon: "plus.circle.fill", text: "kj")
+    TabBarItemView(tabType: .iconText, icon: "plus.circle.fill", text: "kj")
 }
