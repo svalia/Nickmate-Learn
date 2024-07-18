@@ -21,6 +21,7 @@
 		13CBD85D2C432090003A8483 /* IncomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CBD85C2C432090003A8483 /* IncomingView.swift */; };
 		13CBD85F2C4321C7003A8483 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CBD85E2C4321C7003A8483 /* MainView.swift */; };
 		13CBD8612C43F230003A8483 /* TaskItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CBD8602C43F230003A8483 /* TaskItemView.swift */; };
+		13EFF23D2C45735800B0645C /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13EFF23C2C45735800B0645C /* TabBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		13CBD85C2C432090003A8483 /* IncomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomingView.swift; sourceTree = "<group>"; };
 		13CBD85E2C4321C7003A8483 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		13CBD8602C43F230003A8483 /* TaskItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskItemView.swift; sourceTree = "<group>"; };
+		13EFF23C2C45735800B0645C /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				1360C8D12C3DD7790093F1EA /* DescriptionItem.swift */,
 				13CBD8202C417684003A8483 /* BigButton.swift */,
 				13CBD82A2C41D153003A8483 /* TabBarItemView.swift */,
+				13EFF23C2C45735800B0645C /* TabBarView.swift */,
 				1360C8C72C3DD5AE0093F1EA /* Assets.xcassets */,
 				1360C8C92C3DD5AE0093F1EA /* Preview Content */,
 			);
@@ -169,6 +172,7 @@
 			files = (
 				1360C8C62C3DD5AC0093F1EA /* ContentView.swift in Sources */,
 				13CBD85F2C4321C7003A8483 /* MainView.swift in Sources */,
+				13EFF23D2C45735800B0645C /* TabBarView.swift in Sources */,
 				1360C8C42C3DD5AC0093F1EA /* Nickmate_LearnApp.swift in Sources */,
 				13CBD8612C43F230003A8483 /* TaskItemView.swift in Sources */,
 				13CBD81B2C40805E003A8483 /* AuthenticationView.swift in Sources */,

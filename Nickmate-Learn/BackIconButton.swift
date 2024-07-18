@@ -23,6 +23,7 @@ struct BackIconButton: View {
 //            Text("Назад")
         }
         .foregroundStyle(Color(red: 0, green: 0.48, blue: 1))
+        
     }
     }
 }

@@ -12,21 +12,21 @@ struct TabBarItemView: View {
         case icon
     }
     @State var tabType: TypeOfTab = .iconText
+    var isChooseScreen: Bool = false
     var icon: String
-    var text: String //как убрать из инициализатора, когlа тип .icon
+    var text: String = ""
     
     
     var body: some View {
         switch tabType {
         case .iconText:
-            VStack{
-                HStack {
-                    Image(systemName: icon)
+            VStack (alignment: .center){
+                HStack (alignment: VerticalAlignment.top) {
+                    Image(isChooseScreen ? "\(icon)Active" : icon)
 //                        .resizable()
                         .frame(width: 20, height: 17.5974)
                         .padding(.all, 1)
                         .symbolRenderingMode(.monochrome)
-                        .foregroundColor(Color(red: 0.6, green: 0.6, blue: 0.6))
                         .shadow(color: .clear, radius: 0)
                 }
                 .frame(width: 28, height: 28, alignment: .center)
@@ -37,9 +37,9 @@ struct TabBarItemView: View {
                             .weight(.medium)
                     )
                     .multilineTextAlignment(.center)
-                    .foregroundColor(Color(red: 0.6, green: 0.6, blue: 0.6))
                     .shadow(color: .clear, radius: 0)
             }
+            .foregroundStyle(isChooseScreen ? .blue : Color(red: 0.6, green: 0.6, blue: 0.6))
         case .icon:
             VStack{
                 HStack {
@@ -51,7 +51,7 @@ struct TabBarItemView: View {
                         .foregroundStyle(.white, .blue)
                         .shadow(color: .clear, radius: 0)
                 }
-                .frame(width: 48, height: 40, alignment: .center)
+                .frame(width: 48, height: 60, alignment: .center)//
             }
         }
         
@@ -62,5 +62,5 @@ struct TabBarItemView: View {
 
 #Preview {
     //    TabBarItemView(icon: "house", text: "Дела")
-    TabBarItemView(tabType: .iconText, icon: "plus.circle.fill", text: "kj")
+    TabBarItemView(tabType: .iconText, isChooseScreen: true, icon: "More", text: "Еще")
 }
