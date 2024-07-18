@@ -49,7 +49,7 @@ struct TasktemView: View {
                                             Spacer()
                                         }
                                     }
-                                    HStack (alignment: isChecked ? .top : .center, spacing: 2) {
+                                    HStack (alignment: .top, spacing: 2) {
                                         if goalTitle != nil {
                                             HStack {
                                                 Image (systemName: "arrow.turn.down.right")
