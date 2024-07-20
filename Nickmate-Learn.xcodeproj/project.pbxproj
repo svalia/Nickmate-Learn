@@ -12,6 +12,7 @@
 		1360C8C82C3DD5AE0093F1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1360C8C72C3DD5AE0093F1EA /* Assets.xcassets */; };
 		1360C8CB2C3DD5AE0093F1EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1360C8CA2C3DD5AE0093F1EA /* Preview Assets.xcassets */; };
 		1360C8D22C3DD7790093F1EA /* DescriptionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1360C8D12C3DD7790093F1EA /* DescriptionItem.swift */; };
+		13B174652C4C3113005119E9 /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B174642C4C3113005119E9 /* FileView.swift */; };
 		13CBD81B2C40805E003A8483 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CBD81A2C40805E003A8483 /* AuthenticationView.swift */; };
 		13CBD81D2C408AA1003A8483 /* BackIconButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CBD81C2C408AA1003A8483 /* BackIconButton.swift */; };
 		13CBD81F2C4175DF003A8483 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13CBD81E2C4175DF003A8483 /* HomeView.swift */; };
@@ -31,6 +32,7 @@
 		1360C8C72C3DD5AE0093F1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1360C8CA2C3DD5AE0093F1EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1360C8D12C3DD7790093F1EA /* DescriptionItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionItem.swift; sourceTree = "<group>"; };
+		13B174642C4C3113005119E9 /* FileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileView.swift; sourceTree = "<group>"; };
 		13CBD81A2C40805E003A8483 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		13CBD81C2C408AA1003A8483 /* BackIconButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackIconButton.swift; sourceTree = "<group>"; };
 		13CBD81E2C4175DF003A8483 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				13CBD8202C417684003A8483 /* BigButton.swift */,
 				13CBD82A2C41D153003A8483 /* TabBarItemView.swift */,
 				13EFF23C2C45735800B0645C /* TabBarView.swift */,
+				13B174642C4C3113005119E9 /* FileView.swift */,
 				1360C8C72C3DD5AE0093F1EA /* Assets.xcassets */,
 				1360C8C92C3DD5AE0093F1EA /* Preview Content */,
 			);
@@ -174,6 +177,7 @@
 				13CBD85F2C4321C7003A8483 /* MainView.swift in Sources */,
 				13EFF23D2C45735800B0645C /* TabBarView.swift in Sources */,
 				1360C8C42C3DD5AC0093F1EA /* Nickmate_LearnApp.swift in Sources */,
+				13B174652C4C3113005119E9 /* FileView.swift in Sources */,
 				13CBD8612C43F230003A8483 /* TaskItemView.swift in Sources */,
 				13CBD81B2C40805E003A8483 /* AuthenticationView.swift in Sources */,
 				13CBD85D2C432090003A8483 /* IncomingView.swift in Sources */,

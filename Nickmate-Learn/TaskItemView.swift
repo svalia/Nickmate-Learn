@@ -64,10 +64,11 @@ struct TasktemView: View {
                                                 .font(Font.custom("Poppins", size: 16))
                                                 .multilineTextAlignment(.leading)
                                                 .foregroundColor(.gray)
-                                                .frame(width: 260)
+//                                                .frame(width: 260)
                                                 .strikethrough()
                                             //                                        .frame(maxHeight: 40)
                                                 .lineLimit(1)
+                                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
                                         }
                                         else {
                                             Text("Ресерч проблем связанных с хранением файлов у Бренд-менеджеровРесерч проблем связанных с хранением файлов у Бренд-менеджеров")
@@ -157,6 +158,7 @@ struct TasktemView: View {
                         .padding(.leading, 16)
                         .padding(.trailing, 16)
                         .frame(width: 32, alignment: .leading)
+                
                     }
                 }
             }
